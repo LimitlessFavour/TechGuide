@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/tg"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Splash">
+        <activity android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -29,7 +30,6 @@
             android:label="@string/title_activity_modified_nav"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".order_pizza" />
-        <activity android:name=".actvity_main_navigation" />
         <activity android:name=".MainActivity">
             <!--<intent-filter>-->
                 <!--<action android:name="android.intent.action.MAIN" />-->
