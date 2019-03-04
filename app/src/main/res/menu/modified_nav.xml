@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_menuDepartments"
+        android:orderInCategory="100"
+        android:title="Back to Departments"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_menuShare"
+        android:orderInCategory="100"
+        android:title="Share"
+        android:icon="@drawable/ic_menu_share"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_menuSettings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_menuAboutApp"
+        android:orderInCategory="100"
+        android:title="About the app"
+        app:showAsAction="never" />
+</menu>
