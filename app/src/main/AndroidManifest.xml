@@ -4,18 +4,26 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/tg"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/tg"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LecturerDetailActivity"></activity>
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LecturerDetailActivity" />
         <activity android:name=".selectTeacher" />
         <activity android:name=".Lecturer" />
         <activity android:name=".aboutApp" />
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" />
+            android:label="@string/title_activity_settings">
+
+        </activity>
         <activity
             android:name=".modified_nav"
             android:label="@string/title_activity_modified_nav"
@@ -23,11 +31,11 @@
         <activity android:name=".order_pizza" />
         <activity android:name=".actvity_main_navigation" />
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
     </application>
 
