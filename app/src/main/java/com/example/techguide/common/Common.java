@@ -10,7 +10,7 @@ public class Common {
 
     public static final String NODE_LECTURERS = "Lecturers";
 
-    public static final String KEY = "Key";
+    public static final String KEY = "Lecturer key";
 
     public static final String AGE = "Agric and Environmental Engineering";
     public static final String CHE = "Chemical Engineering";
