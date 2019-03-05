@@ -24,9 +24,12 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 public class Lecturer extends AppCompatActivity {
 
@@ -48,7 +51,46 @@ public class Lecturer extends AppCompatActivity {
         setContentView(R.layout.activity_lecturer);
 
 
+        init();
 
+        if (getIntent() != null){
+            deptS = getIntent().getStringExtra(Common.KEY);
+            Toast.makeText(this, ""+ deptS, Toast.LENGTH_SHORT).show();
+            Log.d(TAG, "onCreate: " + deptS);
+        }
+
+        if (!deptS.equals("")){
+            Log.d(TAG, "onCreate: " + deptS);
+            departmentTxt.setText(deptS);
+            loadLecturers(deptS);
+            loadRead(deptS);
+            if (Common.isConnectedToInternet(getBaseContext())){
+
+            }else {
+                Toast.makeText(this, "Check your internet connection", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
+    private void loadRead(String deptS) {
+
+        byActivityRef.child(deptS).orderByChild("name")
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        for (DataSnapshot postSnapshot: dataSnapshot.getChildren()){
+
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+    }
+
+    private void init() {
         database = FirebaseDatabase.getInstance();
 
         databaseReference = database.getReference(Common.NODE_LECTURERS).child(Common.NODE_RAW_POST);
@@ -56,6 +98,7 @@ public class Lecturer extends AppCompatActivity {
         byActivityRef = database.getReference(Common.NODE_LECTURERS);
 
         recyclerView = findViewById(R.id.recycler_view);
+
 
         recyclerView.setHasFixedSize(true);
 
@@ -65,22 +108,11 @@ public class Lecturer extends AppCompatActivity {
 
         departmentTxt = findViewById(R.id.text_department);
 
-        if (getIntent() != null){
-            deptS = getIntent().getStringExtra(Common.KEY);
-            Log.d(TAG, "onCreate: " + deptS);
-        }
+        recyclerView.setAdapter(adapter);
 
-        if (deptS.isEmpty() && deptS != null){
-            Log.d(TAG, "onCreate: " + deptS);
-            departmentTxt.setText(deptS);
-            loadLecturers(deptS);
-            if (Common.isConnectedToInternet(getBaseContext())){
-
-            }else {
-                Toast.makeText(this, "Check your internet connection", Toast.LENGTH_SHORT).show();
-            }
-        }
     }
+
+
 
     private void loadLecturers(String department) {
 //        Query query = databaseReference.orderByChild("department").equalTo(department);
@@ -131,6 +163,31 @@ public class Lecturer extends AppCompatActivity {
 
         adapter.startListening();
         recyclerView.setAdapter(adapter);
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (adapter != null){
+            adapter.startListening();
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (adapter != null){
+            adapter.stopListening();
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (adapter != null){
+            adapter.stopListening();
+        }
 
     }
 }
