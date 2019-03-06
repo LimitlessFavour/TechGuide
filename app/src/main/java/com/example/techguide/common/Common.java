@@ -20,6 +20,8 @@ public class Common {
     public static final String EEE = "Electrical and Electronics Engineering";
     public static final String MEE = "Mechanical Engineering";
     public static final String MSE = "Material Science and Engineering";
+    public static final String FROM_ACTIVITY = "Lecturer Activity";
+    public static final String DEPARTMENT = "Department";
 
     public static boolean isConnectedToInternet(Context context){
         ConnectivityManager connectivityManager = (ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);

@@ -149,9 +149,9 @@ public class Lecturer extends AppCompatActivity {
                 holder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
-                        Intent intent = new Intent(Lecturer.this, LecturerDetailActivity.class );
+                        Intent intent = new Intent(Lecturer.this, LecturerDetailActivity.class);
                         intent.putExtra("postid", adapter.getRef(position).getKey());
-
+                        intent.putExtra(Common.DEPARTMENT, deptS);
                         startActivity(intent);
 
                     }
