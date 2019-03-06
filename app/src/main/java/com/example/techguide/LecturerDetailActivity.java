@@ -28,6 +28,8 @@ public class LecturerDetailActivity extends AppCompatActivity {
 
     String deptS="", postId = "";
 
+    //TODO: done the detail, do the UI
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
