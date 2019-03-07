@@ -109,6 +109,7 @@ public class modified_nav extends AppCompatActivity
 
         } else if (id == R.id.faculty_executives) {
 
+            startActivity(new Intent(modified_nav.this,FacultyActivity.class));
         }else if(id == R.id.menu_send){
             Intent sendIntent = new Intent();
             sendIntent.setAction(Intent.ACTION_SEND);
