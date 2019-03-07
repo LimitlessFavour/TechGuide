@@ -17,6 +17,27 @@
     <string name="title_activity_modified_nav">modified_nav</string>
     <string name="title_activity_settings">Settings</string>
 
+    <!--Strings for department titles-->
+    <string name="age_title">The Department of Agricultural Engineering</string>
+    <string name="che_title">The Department of Chemical Engineering</string>
+    <string name="csc_title">The Department of Computer Science and  Engineering</string>
+    <string name="cve_title">The Department of Civil Engineering</string>
+    <string name="eee_title">The Department of Electrical and Electronics Engineering</string>
+    <string name="fst_title">The Department of Food Science and Technology</string>
+    <string name="mee_title">The Department of Mechanical Engineering</string>
+    <string name="mse_title">The Department of Material Science and  Engineering</string>
+
+    <!--Strings for department content-->
+    <string name="age_content"></string>
+    <string name="che_content"></string>
+    <string name="csc_content"></string>
+    <string name="cve_content"></string>
+    <string name="eee_content"></string>
+    <string name="fst_content"></string>
+    <string name="mee_content"></string>
+    <string name="mse_content"></string>
+
+
     <!-- Strings related to Settings -->
 
     <!-- Example General settings -->

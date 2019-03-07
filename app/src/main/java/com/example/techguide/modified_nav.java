@@ -1,6 +1,7 @@
 package com.example.techguide;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.view.View;
@@ -12,10 +13,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class modified_nav extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    ImageView imageViewContent;
+    TextView textViewContent,textViewTitle;
+
 
     public static int Position;
 
@@ -29,6 +35,48 @@ public class modified_nav extends AppCompatActivity
         setContentView(R.layout.activity_modified_nav);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        imageViewContent=findViewById(R.id.imageView4);
+        textViewTitle =findViewById(R.id.textView4);
+        textViewContent=findViewById(R.id.textView5);
+
+        switch (Position){
+            case 0:
+                imageViewContent.setImageResource(R.drawable.age);
+                textViewTitle.setText(getString(R.string.age_title));
+                break;
+            case 1:
+                imageViewContent.setImageResource(R.drawable.cher);
+                textViewTitle.setText(getString(R.string.che_title));
+                break;
+            case 2:
+                imageViewContent.setImageResource(R.drawable.cscr);
+                textViewTitle.setText(getString(R.string.csc_title));
+                break;
+            case 3:
+                imageViewContent.setImageResource(R.drawable.cver);
+                textViewTitle.setText(getString(R.string.cve_title));
+                break;
+            case 4:
+                imageViewContent.setImageResource(R.drawable.eee);
+                textViewTitle.setText(getString(R.string.eee_title));
+                break;
+            case 5:
+                imageViewContent.setImageResource(R.drawable.fstr);
+                textViewTitle.setText(getString(R.string.fst_title));
+                break;
+            case 6:
+                imageViewContent.setImageResource(R.drawable.meer);
+                textViewTitle.setText(getString(R.string.mee_title));
+                break;
+            case 7:
+                imageViewContent.setImageResource(R.drawable.mser);
+                textViewTitle.setText(getString(R.string.mse_title));
+                break;
+
+        }
+
+
 
         FloatingActionButton fab =  findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -102,9 +150,11 @@ public class modified_nav extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.share) {
+        if (id == R.id.menu_share) {
             Intent sendIntent = new Intent();
             sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.setType("application/vnd.android.package-archive");
+
             startActivity(sendIntent);
         } else if (id == R.id.menu_courses) {
             //TODO POSITION
@@ -151,21 +201,19 @@ public class modified_nav extends AppCompatActivity
 
         } else if (id == R.id.faculty_executives) {
 
-        }else if(id == R.id.menu_send){
-            Intent sendIntent = new Intent();
-            sendIntent.setAction(Intent.ACTION_SEND);
-            sendIntent.setType("application/vnd.android.package-archive");
-
-            startActivity(sendIntent);
-        }else if(id == R.id.menu_share){
+        }else if(id == R.id.menu_send) {
             Intent sendIntent = new Intent();
             sendIntent.setAction(Intent.ACTION_SEND);
             sendIntent.setType("application/vnd.android.package-archive");
 
             startActivity(sendIntent);
         }
+        else if (id == R.id.menu_call_security){
+            Intent intent = new Intent(Intent.ACTION_DIAL);
+            intent.setData(Uri.parse("tel:07060699452"));
+            startActivity(intent);
 
-
+        }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
