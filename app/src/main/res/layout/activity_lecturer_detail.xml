@@ -11,11 +11,20 @@
         android:padding="6dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ImageView
+
             android:layout_width="match_parent"
-            android:layout_marginBottom="21dp"
+            android:layout_marginBottom="31dp"
             android:layout_height="300dp"
             android:id="@+id/lecturer_image"
+
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            android:layout_below="@id/lecturer_image"
             />
 
         <TextView
@@ -28,6 +37,14 @@
             android:textStyle="bold"
             />
 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            android:layout_below="@id/lecturer_name"
+
+            />
+
         <TextView
             android:id="@+id/lecturer_phone"
             android:layout_below="@id/lecturer_email"
@@ -36,6 +53,12 @@
             android:textSize="21sp"
             android:textStyle="bold"
             android:text="phone"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            android:layout_below="@id/lecturer_phone"
+            />
 
         <TextView
             android:id="@+id/lecturer_email"
@@ -45,6 +68,13 @@
             android:textStyle="bold"
             android:text="email"
             android:layout_height="wrap_content" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            android:layout_below="@id/lecturer_email"
+            />
+
 
         <TextView
             android:id="@+id/lecturer_degree"
@@ -54,6 +84,12 @@
             android:textStyle="bold"
             android:text="degree"
             android:layout_height="wrap_content" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            android:layout_below="@id/lecturer_degree"
+            />
 
         <TextView
             android:id="@+id/lecturer_level"
@@ -63,6 +99,12 @@
             android:textStyle="bold"
             android:text="level"
             android:layout_height="wrap_content" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            android:layout_below="@id/lecturer_level"
+            />
 
         <TextView
             android:id="@+id/lecturer_office"
@@ -72,6 +114,12 @@
             android:textStyle="bold"
             android:text="office"
             android:layout_height="wrap_content" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            android:layout_below="@id/lecturer_office"
+            />
 
 
 

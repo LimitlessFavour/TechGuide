@@ -22,6 +22,7 @@ import java.util.List;
 public class cardAdapter extends RecyclerView.Adapter<cardAdapter.MyViewHolder>{
     private Context mContext;
     private List<card> cardList;
+    public static int Position;
 
     public ItemClickListener itemClickListener;
 
@@ -37,11 +38,22 @@ public class cardAdapter extends RecyclerView.Adapter<cardAdapter.MyViewHolder>{
             count =  view.findViewById(R.id.count);
             thumbnail =  view.findViewById(R.id.thumbnail);
             overflow =  view.findViewById(R.id.overflow);
+                //TODO HERE
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                  //  Toast.makeText(mContext, "its here", Toast.LENGTH_SHORT).show();
+                    mContext.startActivity(new Intent(mContext, modified_nav.class));
+                    Position=getAdapterPosition();
+                    modified_nav.getPosition(Position);
+                }
+            });
 
         }
 
         public void setItemClickListener(ItemClickListener itemClickListener){
             this.itemClickListener = itemClickListener;
+
         }
 
 
@@ -73,6 +85,7 @@ public class cardAdapter extends RecyclerView.Adapter<cardAdapter.MyViewHolder>{
                 .inflate(R.layout.album_card, parent, false);
 
         return new MyViewHolder(itemView);
+
     }
 
     @Override
@@ -89,7 +102,7 @@ public class cardAdapter extends RecyclerView.Adapter<cardAdapter.MyViewHolder>{
             public void onClick(View view, int position, boolean isLongClick) {
                 Intent intent = new Intent(mContext,modified_nav.class);
                 mContext.startActivity(intent);
-                Toast.makeText(mContext, "Asjbhsjos", Toast.LENGTH_SHORT).show();
+
 
             }
         });

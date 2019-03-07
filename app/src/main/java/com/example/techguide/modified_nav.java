@@ -12,9 +12,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class modified_nav extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    public static int Position;
+
+    public static void getPosition(int position){
+        Position=position;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,6 +107,41 @@ public class modified_nav extends AppCompatActivity
             sendIntent.setAction(Intent.ACTION_SEND);
             startActivity(sendIntent);
         } else if (id == R.id.menu_courses) {
+            //TODO POSITION
+            if (Position==0){
+               Intent intent=new Intent(modified_nav.this,ageCourses.class);
+               startActivity(intent);
+            }else if(Position==1){
+              Intent intent=new Intent(modified_nav.this,cheCourses.class);
+              startActivity(intent);
+            }else if(Position==2){
+                Intent intent=new Intent(modified_nav.this,cscCourses.class);
+                startActivity(intent);
+
+            }else if(Position==3){
+                Intent intent=new Intent(modified_nav.this,cveCourses.class);
+                startActivity(intent);
+
+            }else if(Position==4){
+                Intent intent=new Intent(modified_nav.this,eeeCourses.class);
+                startActivity(intent);
+
+            }else if(Position==5){
+                Intent intent=new Intent(modified_nav.this,fstCourses.class);
+                startActivity(intent);
+
+
+            }else if(Position==6){
+                Intent intent=new Intent(modified_nav.this,meeCourses.class);
+                startActivity(intent);
+
+
+            }else if(Position==7){
+                Intent intent=new Intent(modified_nav.this,mseCourses.class);
+                startActivity(intent);
+
+
+            }
 
         } else if (id == R.id.menu_lecturers) {
             Intent intent =new Intent(modified_nav.this,selectTeacher.class);
