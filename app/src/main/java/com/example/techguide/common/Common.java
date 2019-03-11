@@ -22,6 +22,8 @@ public class Common {
     public static final String MSE = "Material Science and Engineering";
     public static final String FROM_ACTIVITY = "Lecturer Activity";
     public static final String DEPARTMENT = "Department";
+    public static final String NODE_FACULTY_EXECS = "Faculty Executives";
+
 
     public static boolean isConnectedToInternet(Context context){
         ConnectivityManager connectivityManager = (ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);

@@ -209,13 +209,15 @@ public class modified_nav extends AppCompatActivity
         } else if (id == R.id.menu_departmental_Executives) {
 
         } else if (id == R.id.faculty_executives) {
-
-        }else if(id == R.id.menu_send) {
+            startActivity(new Intent(modified_nav.this,FacultyActivity.class));
+        }else if(id == R.id.menu_send){
             Intent sendIntent = new Intent();
             sendIntent.setAction(Intent.ACTION_SEND);
             sendIntent.setType("application/vnd.android.package-archive");
 
             startActivity(sendIntent);
+        }else if(id == R.id.menu_share){
+
         }
         else if (id == R.id.menu_call_security){
             Intent intent = new Intent(Intent.ACTION_DIAL);
