@@ -5,18 +5,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".selectTeacher">
+    tools:context=".selectTeacher"
+    >
 
 
     <TextView
         android:id="@+id/textView_select_lecturer"
         android:layout_width="match_parent"
         android:layout_height="137dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="12dp"
         android:text="Select Your Lecturer"
+        android:textSize="30dp"
+        android:gravity="center"
          />
 
     <ScrollView

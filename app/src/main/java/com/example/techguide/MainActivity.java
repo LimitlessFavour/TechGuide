@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         FirebaseApp.initializeApp(this);
 
-
+         // initiating the collapsing bar
         initCollapsingToolbar();
 
         recyclerView = findViewById(R.id.recycler_view);
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         prepareAlbums();
 
         try {
-            Glide.with(this).load(R.drawable.cover).into((ImageView) findViewById(R.id.backdrop));
+            Glide.with(this).load(R.drawable.techr).into((ImageView) findViewById(R.id.backdrop));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
 
-
+//Methdo for collapsig toolbar
 
     private void initCollapsingToolbar() {
         final CollapsingToolbarLayout collapsingToolbar =

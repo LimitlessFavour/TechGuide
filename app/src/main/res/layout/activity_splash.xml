@@ -6,15 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".Splash"
     android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
     >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" />
 
+    <ImageView
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+     android:layout_gravity="center"
+     android:layout_marginTop="80dp"
+     android:src="@drawable/tg"
+     />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="splash"
-        android:textSize="50dp"
+        android:text="Tech Guide"
+        android:textSize="45dp"
         android:layout_gravity="center"
         android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information about your faculty at your fingertips..."
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/progress"
         />
 
 </LinearLayout>

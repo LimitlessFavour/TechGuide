@@ -49,8 +49,16 @@
                 android:checkable="false"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Send"
+                android:visible="false"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_call_security"
+                android:checkable="false"
+                android:icon="@drawable/ic_call_black_24dp"
+                android:title="Call School Security"
                 android:visible="true"
                 app:showAsAction="never" />
+
         </menu>
     </item>
 
