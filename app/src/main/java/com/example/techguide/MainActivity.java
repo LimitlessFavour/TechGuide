@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         FirebaseApp.initializeApp(this);
 
-
+         // initiating the collapsing bar
         initCollapsingToolbar();
 
         recyclerView = findViewById(R.id.recycler_view);
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
 
-
+//Methdo for collapsig toolbar
 
     private void initCollapsingToolbar() {
         final CollapsingToolbarLayout collapsingToolbar =

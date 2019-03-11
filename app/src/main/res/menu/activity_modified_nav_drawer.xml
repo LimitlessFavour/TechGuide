@@ -49,7 +49,7 @@
                 android:checkable="false"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Send"
-                android:visible="true"
+                android:visible="false"
                 app:showAsAction="never" />
             <item
                 android:id="@+id/menu_call_security"

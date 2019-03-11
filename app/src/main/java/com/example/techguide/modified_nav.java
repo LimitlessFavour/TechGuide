@@ -33,8 +33,9 @@ public class modified_nav extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modified_nav);
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbarModified_nav);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(getResources().getString(R.string.app_name));
 
         imageViewContent=findViewById(R.id.imageView4);
         textViewTitle =findViewById(R.id.textView4);
@@ -44,34 +45,42 @@ public class modified_nav extends AppCompatActivity
             case 0:
                 imageViewContent.setImageResource(R.drawable.age);
                 textViewTitle.setText(getString(R.string.age_title));
+                textViewContent.setText(R.string.age_content);
                 break;
             case 1:
                 imageViewContent.setImageResource(R.drawable.cher);
                 textViewTitle.setText(getString(R.string.che_title));
+                textViewContent.setText(R.string.che_content);
                 break;
             case 2:
                 imageViewContent.setImageResource(R.drawable.cscr);
                 textViewTitle.setText(getString(R.string.csc_title));
+                textViewContent.setText(R.string.csc_content);
                 break;
             case 3:
                 imageViewContent.setImageResource(R.drawable.cver);
                 textViewTitle.setText(getString(R.string.cve_title));
+                textViewContent.setText(R.string.cve_content);
                 break;
             case 4:
                 imageViewContent.setImageResource(R.drawable.eee);
                 textViewTitle.setText(getString(R.string.eee_title));
+                textViewContent.setText(R.string.eee_content);
                 break;
             case 5:
                 imageViewContent.setImageResource(R.drawable.fstr);
                 textViewTitle.setText(getString(R.string.fst_title));
+                textViewContent.setText(R.string.fst_content);
                 break;
             case 6:
                 imageViewContent.setImageResource(R.drawable.meer);
                 textViewTitle.setText(getString(R.string.mee_title));
+                textViewContent.setText(R.string.mee_content);
                 break;
             case 7:
                 imageViewContent.setImageResource(R.drawable.mser);
                 textViewTitle.setText(getString(R.string.mse_title));
+                textViewContent.setText(R.string.mse_content);
                 break;
 
         }

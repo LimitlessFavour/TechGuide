@@ -28,14 +28,25 @@
     <string name="mse_title">The Department of Material Science and  Engineering</string>
 
     <!--Strings for department content-->
-    <string name="age_content"></string>
-    <string name="che_content"></string>
-    <string name="csc_content"></string>
-    <string name="cve_content"></string>
-    <string name="eee_content"></string>
-    <string name="fst_content"></string>
-    <string name="mee_content"></string>
-    <string name="mse_content"></string>
+    <string name="age_content">The department provides its student\'s a wide range of opportunity in agricultural
+        engineering with its vision to create a teaching and research environment
+        for imparting appropriate skills and knowledge in Agricultural and rural
+        development in an environmental friendly and sustainable manner.</string>
+    <string name="che_content">The department at its inception is to establish research activities with main focus
+        on raw material processing
+        and application of knowledge in the development of Oil and Gas sector.</string>
+    <string name="csc_content">no content</string>
+    <string name="cve_content">no conetn</string>
+    <string name="eee_content">The undergraduate programme is designed to produce graduates that can be more
+readily absorbed into the various areas of the rapidly developing fields of Electronic and
+Electrical Engineering. Students are exposed to both basic and applied courses as well as
+laboratory and industrial training to enable them satisfy the manpower needs of the public
+and industrial sectors of the Nigerian economy.</string>
+    <string name="fst_content">no content</string>
+    <string name="mee_content">Embedding professional and entrepreneurial skills
+        in conventional knowledge-based learning in renewable energy,
+        material processing, machine development and mechanical maintenance.</string>
+    <string name="mse_content">no content</string>
 
 
     <!-- Strings related to Settings -->
@@ -109,4 +120,7 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
