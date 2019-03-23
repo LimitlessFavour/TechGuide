@@ -20,12 +20,12 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="Lecturers"
             android:visible="true" />
-        <item
-            android:id="@+id/menu_departmental_Executives"
-            android:checkable="true"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Departmental Executives"
-            android:visible="true" />
+        <!--<item-->
+            <!--android:id="@+id/menu_departmental_Executives"-->
+            <!--android:checkable="true"-->
+            <!--android:icon="@drawable/ic_menu_slideshow"-->
+            <!--android:title="Departmental Executives"-->
+            <!--android:visible="true" />-->
         <item
             android:id="@+id/faculty_executives"
             android:checkable="true"

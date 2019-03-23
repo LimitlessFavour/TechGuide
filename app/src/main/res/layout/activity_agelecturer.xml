@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
             app:titleTextColor="#fff"
-            app:title="Faculty Executives"
+            app:title="Agicultural and Environmental Engineering"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content">
 
             <android.support.v7.widget.CardView
-                android:id="@+id/president"
+                android:id="@+id/jimmy"
                 android:layout_margin="4dp"
                 android:padding="4dp"
                 android:layout_gravity="center"
@@ -53,7 +53,7 @@
                         android:layout_gravity="center"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/ic_person_black_24dp"/>
+                        android:src="@drawable/osunbitan"/>
                     <TextView
                         android:layout_gravity="center"
                         android:gravity="center"
@@ -61,19 +61,19 @@
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:text="Miracle"/>
+                        android:text="@string/prof_jimmy_akinfemi_osunbitan"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_gravity="center"
                         android:textStyle="bold"
-                        android:text="President"/>
+                        android:text="HOD"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
-                android:id="@+id/vp1"
+                android:id="@+id/moses"
                 android:layout_margin="4dp"
                 android:padding="4dp"
                 android:layout_gravity="center"
@@ -92,7 +92,7 @@
                         android:layout_gravity="center"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/vp1"/>
+                        android:src="@drawable/ige"/>
                     <TextView
                         android:layout_gravity="center"
                         android:gravity="center"
@@ -100,14 +100,14 @@
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:text="Bankole segun"/>
+                        android:text="Prof Moses Toye Ige"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_gravity="center"
                         android:textStyle="bold"
-                        android:text="Vice President 1"/>
+                        android:text="Professor"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -122,7 +122,7 @@
             android:layout_height="wrap_content">
 
             <android.support.v7.widget.CardView
-                android:id="@+id/vp2"
+                android:id="@+id/ajayi"
                 android:layout_margin="4dp"
                 android:padding="4dp"
                 android:layout_gravity="center"
@@ -141,7 +141,7 @@
                         android:layout_gravity="center"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/vp2"/>
+                        android:src="@drawable/ajayi"/>
                     <TextView
                         android:layout_gravity="center"
                         android:gravity="center"
@@ -149,19 +149,19 @@
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:text="Adeniji John (EEE)"/>
+                        android:text="Prof Omolayo Ademola Ajayi"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_gravity="center"
                         android:textStyle="bold"
-                        android:text="Vice President 2"/>
+                        android:text="Professor\n(Former Deputy V.C.)"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
-                android:id="@+id/gen_sec"
+                android:id="@+id/okunade"
                 android:layout_margin="4dp"
                 android:padding="4dp"
                 android:layout_gravity="center"
@@ -180,7 +180,7 @@
                         android:layout_gravity="center"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/ic_person_black_24dp"/>
+                        android:src="@drawable/okunade"/>
                     <TextView
                         android:layout_gravity="center"
                         android:gravity="center"
@@ -188,14 +188,14 @@
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:text="Tee Paul (CHE)"/>
+                        android:text="Dr David Adebimpe Okunade"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_gravity="center"
                         android:textStyle="bold"
-                        android:text="General Secretary"/>
+                        android:text="Senior Lecturer"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -210,7 +210,7 @@
             android:layout_height="wrap_content">
 
             <android.support.v7.widget.CardView
-                android:id="@+id/welfare"
+                android:id="@+id/omotayo"
                 android:layout_margin="4dp"
                 android:padding="4dp"
                 android:layout_gravity="center"
@@ -229,7 +229,7 @@
                         android:layout_gravity="center"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/welfare"/>
+                        android:src="@drawable/aregbesola"/>
                     <TextView
                         android:layout_gravity="center"
                         android:gravity="center"
@@ -237,20 +237,20 @@
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:text="Babawale Grace Oluwabukumi (FST)"/>
+                        android:text="Dr Omotayo Adeteju"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_gravity="center"
                         android:textStyle="bold"
-                        android:text="Welfare"/>
+                        android:text="Senior Lecturer"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/pro"
+                android:id="@+id/gbolabo"
                 android:layout_width="0dp"
                 android:layout_height="230dp"
                 android:layout_alignEnd="@+id/row3"
@@ -272,14 +272,14 @@
                         android:layout_height="150dp"
                         android:layout_gravity="center"
                         android:padding="2dp"
-                        android:src="@drawable/pro" />
+                        android:src="@drawable/ogunwande" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="Oluwasina Marvelous (CSC)"
+                        android:text="Dr Gbolabo Abidemi Ogunwande"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -288,7 +288,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="P.R.O."
+                        android:text="Senior Lecturer"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -304,7 +304,7 @@
             android:layout_height="wrap_content">
 
             <android.support.v7.widget.CardView
-                android:id="@+id/socials"
+                android:id="@+id/sanni"
                 android:layout_margin="4dp"
                 android:padding="4dp"
                 android:layout_gravity="center"
@@ -323,7 +323,7 @@
                         android:layout_gravity="center"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/ic_person_black_24dp"/>
+                        android:src="@drawable/sanni"/>
                     <TextView
                         android:layout_gravity="center"
                         android:gravity="center"
@@ -331,20 +331,20 @@
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:text="Oyaromade Ayodeji (MEE)"/>
+                        android:text="Dr Lateef Ayodele Sanni"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_gravity="center"
                         android:textStyle="bold"
-                        android:text="Socials Director"/>
+                        android:text="Senior Lecturer"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/ass_gen_sec"
+                android:id="@+id/osunade"
                 android:layout_margin="4dp"
                 android:padding="4dp"
                 android:layout_gravity="center"
@@ -365,14 +365,14 @@
                         android:layout_height="150dp"
                         android:layout_gravity="center"
                         android:padding="2dp"
-                        android:src="@drawable/asgensec" />
+                        android:src="@drawable/osunade" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="Ademola Agunbiade"
+                        android:text="Prof J.A. Osunade"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
@@ -381,7 +381,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="Assistant General Secretary"
+                        android:text="Professor"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -397,7 +397,7 @@
             android:layout_height="wrap_content">
 
             <android.support.v7.widget.CardView
-                android:id="@+id/sports"
+                android:id="@+id/owolarafe"
                 android:layout_margin="4dp"
                 android:padding="4dp"
                 android:layout_gravity="center"
@@ -416,7 +416,7 @@
                         android:layout_gravity="center"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@drawable/ic_person_black_24dp"/>
+                        android:src="@drawable/owolarafe"/>
                     <TextView
                         android:layout_gravity="center"
                         android:gravity="center"
@@ -424,19 +424,64 @@
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:text="Fesomade Alli (CSC)"/>
+                        android:text="Prof Oseni Kehinde Owolarafe"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_gravity="center"
                         android:textStyle="bold"
-                        android:text="Sports Director"/>
+                        android:text="Professor"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/salami"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="230dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="4dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:padding="2dp"
+                        android:src="@drawable/salami" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Mr Adams Abiodun Salami"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Higher Technical Officer"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
-
         </LinearLayout>
+
+
+
     </RelativeLayout>
 </ScrollView>

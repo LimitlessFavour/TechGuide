@@ -82,7 +82,10 @@ public class modified_nav extends AppCompatActivity
                 textViewTitle.setText(getString(R.string.mse_title));
                 textViewContent.setText(R.string.mse_content);
                 break;
-
+            default :
+                imageViewContent.setImageResource(R.drawable.mser);
+                textViewTitle.setText(getString(R.string.mse_title));
+                textViewContent.setText(R.string.mse_content);
         }
 
 
@@ -206,7 +209,6 @@ public class modified_nav extends AppCompatActivity
             Intent intent =new Intent(modified_nav.this,selectTeacher.class);
             startActivity(intent);
 
-        } else if (id == R.id.menu_departmental_Executives) {
 
         } else if (id == R.id.faculty_executives) {
             startActivity(new Intent(modified_nav.this,FacultyActivity.class));

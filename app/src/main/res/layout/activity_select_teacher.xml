@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="137dp"
         android:layout_marginBottom="12dp"
-        android:text="Select Your Lecturer"
+        android:text="Lecturers of which Department?"
         android:textSize="30dp"
         android:gravity="center"
          />

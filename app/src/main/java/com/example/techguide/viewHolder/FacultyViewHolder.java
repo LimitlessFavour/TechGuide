@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.techguide.R;
 import com.example.techguide.interfaces.ItemClickListener;
 
 

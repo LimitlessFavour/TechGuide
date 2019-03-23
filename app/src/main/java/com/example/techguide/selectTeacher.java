@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.techguide.common.Common;
+import com.example.techguide.lecturers.AGELecturerActivity;
 
 public class selectTeacher extends AppCompatActivity {
 
@@ -31,7 +32,7 @@ CardView age,che,csc,cve,eee,fst,mee,mse ;
         age.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(selectTeacher.this, Lecturer.class);
+                Intent intent = new Intent(selectTeacher.this, AGELecturerActivity.class);
                 intent.putExtra(Common.KEY, Common.AGE);
                 startActivity(intent);
             }
@@ -41,7 +42,7 @@ CardView age,che,csc,cve,eee,fst,mee,mse ;
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(selectTeacher.this, Lecturer.class);
+                Intent intent = new Intent(selectTeacher.this, AGELecturerActivity.class);
                 intent.putExtra(Common.KEY, Common.CHE);
                 startActivity(intent);
             }
@@ -51,7 +52,7 @@ CardView age,che,csc,cve,eee,fst,mee,mse ;
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(selectTeacher.this, Lecturer.class);
+                Intent intent = new Intent(selectTeacher.this, AGELecturerActivity.class);
                 intent.putExtra(Common.KEY, Common.CSC);
                 startActivity(intent);
             }
@@ -60,7 +61,7 @@ CardView age,che,csc,cve,eee,fst,mee,mse ;
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(selectTeacher.this, Lecturer.class);
+                Intent intent = new Intent(selectTeacher.this, AGELecturerActivity.class);
                 intent.putExtra(Common.KEY, Common.CVE);
                 startActivity(intent);
             }
@@ -69,7 +70,7 @@ CardView age,che,csc,cve,eee,fst,mee,mse ;
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(selectTeacher.this, Lecturer.class);
+                Intent intent = new Intent(selectTeacher.this, AGELecturerActivity.class);
                 intent.putExtra(Common.KEY, Common.EEE);
                 startActivity(intent);
             }
@@ -78,7 +79,7 @@ CardView age,che,csc,cve,eee,fst,mee,mse ;
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(selectTeacher.this, Lecturer.class);
+                Intent intent = new Intent(selectTeacher.this, AGELecturerActivity.class);
                 intent.putExtra(Common.KEY, Common.FST);
                 Toast.makeText(selectTeacher.this, ""+Common.FST, Toast.LENGTH_SHORT).show();
                 startActivity(intent);
@@ -88,7 +89,7 @@ CardView age,che,csc,cve,eee,fst,mee,mse ;
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(selectTeacher.this, Lecturer.class);
+                Intent intent = new Intent(selectTeacher.this, AGELecturerActivity.class);
                 intent.putExtra(Common.KEY, Common.MEE);
                 Toast.makeText(selectTeacher.this, "" + Common.MEE, Toast.LENGTH_SHORT).show();
                 startActivity(intent);
@@ -98,7 +99,7 @@ CardView age,che,csc,cve,eee,fst,mee,mse ;
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(selectTeacher.this, Lecturer.class);
+                Intent intent = new Intent(selectTeacher.this, AGELecturerActivity.class);
                 intent.putExtra(Common.KEY, Common.MSE);
                 Toast.makeText(selectTeacher.this, ""+Common.MSE, Toast.LENGTH_SHORT).show();
                 startActivity(intent);
